@@ -147,10 +147,10 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file('debug.keystore')
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
+            MYAPP_UPLOAD_STORE_FILE=my-upload-key.keystore
+            MYAPP_UPLOAD_KEY_ALIAS=my-key-alias
+            MYAPP_UPLOAD_STORE_PASSWORD=bill123
+            MYAPP_UPLOAD_KEY_PASSWORD=bill123
         }
         release {
             if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
