@@ -41,5 +41,9 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billvunguyen/cicd_react_native.git"
   }
 }
