@@ -18,15 +18,8 @@ jobs:
     needs: install-and-test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/cache@v2
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-      # Yarn Cache: https://github.com/actions/cache/blob/master/examples.md#node---yarn
+      - uses: actions/cache@v2
+
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
