@@ -1,4 +1,2 @@
 # cicd_react_native
-test cicd react native with github Action
-
-nhủn nhủn nhủn
+develope to do list en react-native and apply cicd react native with github Action
